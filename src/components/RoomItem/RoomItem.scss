@@ -7,10 +7,9 @@
   background-color: #cbc0d3;
   border-radius: 50% 20% / 10% 40%;
 
-  @media (max-width:600px) {
+  @media (max-width: 600px) {
     display: inline;
   }
-
 
   &:hover {
     background-color: #f0edf2;
@@ -37,19 +36,12 @@
       font-weight: 600;
     }
 
-    &__rooms {
-    }
-
-    &__price {
-    }
-
     &__description {
       display: inline-block;
       text-overflow: ellipsis;
       font-style: italic;
-      
+
       @media (max-width: 700px) {
-        
       }
       &:hover {
         white-space: normal;
@@ -63,9 +55,8 @@
     display: flex;
     flex-direction: column;
     padding: 0px 10px;
-    // margin: auto;
-    
-    @media (max-width:600px) {
+
+    @media (max-width: 600px) {
       padding-top: 10px;
       align-items: center;
     }
@@ -96,7 +87,7 @@
   height: 35px;
   color: #64738d;
 
-  @media (max-width:600px) {
+  @media (max-width: 600px) {
     width: 1.8in;
   }
   &:hover {
