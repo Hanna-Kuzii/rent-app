@@ -1,0 +1,93 @@
+.RoomItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 10px;
+  background-color: #cbc0d3;
+  border-radius: 50% 20%/10% 40%;
+}
+@media (max-width: 600px) {
+  .RoomItem {
+    display: inline;
+  }
+}
+.RoomItem:hover {
+  background-color: #f0edf2;
+}
+.RoomItem__description {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  gap: 5px;
+  text-overflow: ellipsis;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media (max-width: 900px) {
+  .RoomItem__description {
+    flex-wrap: wrap;
+  }
+}
+.RoomItem__description :not(:last-child) {
+  flex-shrink: 0;
+}
+.RoomItem__description__name {
+  font-weight: 600;
+}
+.RoomItem__description__description {
+  display: inline-block;
+  text-overflow: ellipsis;
+  font-style: italic;
+}
+.RoomItem__description__description:hover {
+  white-space: normal;
+  transition-timing-function: 0.5s;
+  transition-duration: 2s;
+}
+.RoomItem__buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+}
+@media (max-width: 600px) {
+  .RoomItem__buttons {
+    padding-top: 10px;
+    align-items: center;
+  }
+}
+.RoomItem__buttons-rent {
+  background-color: #c0d3cb;
+  margin-bottom: 5px;
+}
+.RoomItem__buttons-rent:hover {
+  color: #446056;
+}
+.RoomItem__buttons-delete {
+  background-color: #d3cbc0;
+}
+.RoomItem__buttons-delete:hover {
+  color: #60444e;
+}
+
+.button-list {
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-weight: 600;
+  border-color: #64738d;
+  width: 90px;
+  height: 35px;
+  color: #64738d;
+}
+@media (max-width: 600px) {
+  .button-list {
+    width: 1.8in;
+  }
+}
+.button-list:hover {
+  font-weight: 700;
+  border: solid;
+  border-color: white;
+  transform: scale(120%);
+}/*# sourceMappingURL=RoomItem.css.map */

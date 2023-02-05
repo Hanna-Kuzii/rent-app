@@ -1,0 +1,174 @@
+.Form {
+  background-color: #aa99c1;
+  border-radius: 50% 20%/10% 40%;
+  padding: 30px 20px;
+}
+
+.newRoom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 10px;
+  font-size: 107%;
+}
+.newRoom__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 1300px) {
+  .newRoom__form {
+    align-items: flex-end;
+  }
+}
+@media (max-width: 1000px) {
+  .newRoom__form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.newRoom__form label {
+  width: 20%;
+}
+@media (max-width: 1000px) {
+  .newRoom__form label {
+    width: 100%;
+  }
+}
+.newRoom__form-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 45%;
+}
+@media (max-width: 1300px) {
+  .newRoom__form-elements {
+    align-items: flex-end;
+  }
+}
+@media (max-width: 1000px) {
+  .newRoom__form-elements {
+    width: 100%;
+    gap: 20px;
+  }
+}
+.newRoom__form-elements + * {
+  width: 30%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.newRoom__form-elements [type=number]::-moz-placeholder {
+  visibility: hidden;
+}
+.newRoom__form-elements [type=number]:-ms-input-placeholder {
+  visibility: hidden;
+}
+.newRoom__form-elements [type=number]::placeholder {
+  visibility: hidden;
+}
+.newRoom__form-elements [type=number]:hover {
+  width: 150%;
+}
+.newRoom__form-elements [type=number]:hover::-moz-placeholder {
+  visibility: visible;
+}
+.newRoom__form-elements [type=number]:hover:-ms-input-placeholder {
+  visibility: visible;
+}
+.newRoom__form-elements [type=number]:hover::placeholder {
+  visibility: visible;
+}
+@media (max-width: 1000px) {
+  .newRoom__form-elements [type=number]:hover:hover {
+    width: 100%;
+  }
+}
+.newRoom__form-elements [type=text]::-moz-placeholder {
+  visibility: hidden;
+}
+.newRoom__form-elements [type=text]:-ms-input-placeholder {
+  visibility: hidden;
+}
+.newRoom__form-elements [type=text]::placeholder {
+  visibility: hidden;
+}
+.newRoom__form-elements [type=text]:hover {
+  width: 130%;
+}
+@media (max-width: 1000px) {
+  .newRoom__form-elements [type=text]:hover {
+    width: 100%;
+  }
+}
+.newRoom__form-elements [type=text]:hover::-moz-placeholder {
+  visibility: visible;
+}
+.newRoom__form-elements [type=text]:hover:-ms-input-placeholder {
+  visibility: visible;
+}
+.newRoom__form-elements [type=text]:hover::placeholder {
+  visibility: visible;
+}
+.newRoom__form-elements [type=text]:hover + p {
+  right: -40%;
+}
+@media (max-width: 1000px) {
+  .newRoom__form-elements [type=text]:hover + p {
+    right: -5%;
+  }
+}
+.newRoom__form-input {
+  margin: 0;
+  margin-right: 0%;
+  display: block;
+  width: 100%;
+  font-size: 90%;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+@media (max-width: 800px) {
+  .newRoom__form-input {
+    width: 90%;
+    margin: 5px auto;
+  }
+}
+.newRoom__form-input + p {
+  position: absolute;
+  margin: 0;
+  right: -5%;
+  top: 7%;
+  visibility: hidden;
+}
+.newRoom__form-input:focus {
+  background-color: #e8eaef;
+}
+.newRoom__form-input:focus + p {
+  visibility: visible;
+}
+.newRoom__button {
+  width: 30%;
+  padding: 10px 0;
+  font-size: 110%;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #745c99;
+  align-self: center;
+}
+@media (max-width: 800px) {
+  .newRoom__button {
+    width: 70%;
+  }
+}
+.newRoom__button:hover {
+  background-color: #c0b3d3;
+  border: solid;
+  border: #745c99;
+}
+
+.price-input {
+  position: relative;
+}/*# sourceMappingURL=Form.css.map */

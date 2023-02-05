@@ -1,0 +1,96 @@
+.CurrentRent {
+  background-color: #efd3d7;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 90px 20px/ 50px 10px;
+  box-sizing: border-box;
+
+  &__noRoom {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 120%;
+  }
+}
+
+.choosedRoom {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 10px;
+  padding-bottom: 30px;
+  font-size: 110%;
+  background-color: #feeafa;
+  border-radius: 10% 30% 50% 60%;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    @media (max-width: 800px) {
+      flex-wrap: wrap;
+      }
+
+    & :not(:last-child) {
+      flex-shrink: 0;
+    }
+
+    &__name {
+      font-weight: 600;
+    }
+
+    &__rooms {
+    }
+
+    &__price {
+    }
+
+    &__description {
+      display: inline-block;
+      text-overflow: ellipsis;
+      font-style: italic;
+      transition: inherit;
+
+      &:hover {
+        white-space: normal;
+      }
+    }
+  }
+  &__button-cancel {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 15px;
+    height: 50px;
+    background-color: #df87cd;
+    color: aliceblue;
+    font-size: 110%;
+
+    @media (max-width: 1000px) {
+    height: 40px;
+    font-size: 95%;
+    }
+    @media (max-width: 800px) {
+      font-weight: 600;
+      width: 40%;
+      margin: auto;
+    }
+
+    &:hover {
+      font-weight: 600;
+      border: solid;
+      border-color: white;
+      transform: scale(120%);
+    }
+  }
+}

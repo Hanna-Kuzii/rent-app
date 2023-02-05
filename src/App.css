@@ -1,0 +1,26 @@
+.App {
+  width: 80%;
+  margin: 0 auto;
+  transition-property: all;
+  transition-timing-function: 0.5s;
+  transition-duration: 0.5s;
+}
+.App-header {
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .App {
+    width: 85%;
+    font-size: 95%;
+  }
+}
+@media (max-width: 600px) {
+  .App {
+    width: 90%;
+    font-size: 90%;
+  }
+}
+
+p {
+  margin: 0;
+}/*# sourceMappingURL=App.css.map */
