@@ -20,6 +20,11 @@
 .newRoom__form .newRoom__form-element {
   width: 20%;
 }
+@media (max-width: 1000px) {
+  .newRoom__form .newRoom__form-element {
+    width: 100%;
+  }
+}
 @media (max-width: 1300px) {
   .newRoom__form {
     align-items: flex-end;

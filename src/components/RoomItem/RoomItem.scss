@@ -90,6 +90,10 @@
   @media (max-width: 600px) {
     width: 1.8in;
   }
+
+  @media (max-width: 300px) {
+    width: 1.1in;
+  }
   &:hover {
     font-weight: 700;
     border: solid;

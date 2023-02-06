@@ -85,6 +85,11 @@
     width: 1.8in;
   }
 }
+@media (max-width: 300px) {
+  .button-list {
+    width: 1.1in;
+  }
+}
 .button-list:hover {
   font-weight: 700;
   border: solid;

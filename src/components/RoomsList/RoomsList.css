@@ -49,9 +49,21 @@
   padding-right: 10px;
   font-weight: 400;
 }
+@media (max-width: 500px) {
+  .RoomsList__header__add-title {
+    text-align: center;
+    padding-right: 0;
+  }
+}
 @media (max-width: 800px) {
   .RoomsList__header__add-filter {
     display: inline;
+  }
+}
+@media (max-width: 500px) {
+  .RoomsList__header__add-filter {
+    display: contents;
+    width: 90%;
   }
 }
 .RoomsList__header__add-filter input {
@@ -69,6 +81,11 @@
   cursor: pointer;
   font-size: 95%;
 }
+@media (max-width: 500px) {
+  .RoomsList__header__add-sort-select {
+    width: 80%;
+  }
+}
 @media (max-width: 800px) {
   .RoomsList__header__add-sort {
     display: inline;
@@ -83,6 +100,12 @@
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+  }
+}
+@media (max-width: 500px) {
+  .RoomsList__header__add-sort {
+    display: contents;
+    width: 90%;
   }
 }
 

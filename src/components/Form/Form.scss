@@ -19,6 +19,9 @@
 
     & .newRoom__form-element {
       width: 20%;
+      @media (max-width: 1000px) {
+        width: 100%;
+      }
     }
 
     @media (max-width: 1300px) {

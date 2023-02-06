@@ -44,11 +44,21 @@
 			&-title {
 				padding-right: 10px;
 				font-weight: 400;
+
+				@media (max-width: 500px) {
+					text-align: center;
+					padding-right: 0;
+				}
 			}
 
 			&-filter {
 				@media (max-width: 800px) {
 					display: inline;
+				}
+
+				@media (max-width: 500px) {
+					display: contents;
+					width: 90%;
 				}
 
 				& input {
@@ -69,6 +79,10 @@
 					border-radius: 5px;
 					cursor: pointer;
 					font-size: 95%;
+
+					@media (max-width: 500px) {
+						width: 80%;
+					}
 				}
 
 				@media (max-width: 800px) {
@@ -78,6 +92,10 @@
 				@media (max-width: 600px) {
 					display: block;
 					width: max-content;
+				}
+				@media (max-width: 500px) {
+					display: contents;
+					width: 90%;
 				}
 			}
 		}
