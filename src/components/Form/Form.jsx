@@ -88,7 +88,7 @@ const Form = ({ addApartment }) => {
                 Rent Price:
                 <div className="price-input">
                   <input
-                    type="text"
+                    type="number"
                     name="price"
                     id="price"
                     placeholder="What is the cost?"
@@ -102,7 +102,7 @@ const Form = ({ addApartment }) => {
                 </div>
               </label>
             </div>
-            <label for="description" className="newRoom__element">
+            <label for="description" className="newRoom__form-element">
               Description:
               <input
                 type="text"
