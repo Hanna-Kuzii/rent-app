@@ -1,5 +1,5 @@
 # rent-app
-[DEMO LINK](https://hanna-kuzii.github.io/rent-app/)
+[DEMO LINK](https://hanna-kuzii.github.io/trello-like-board/)
 
 # Installing
 
